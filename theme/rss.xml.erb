@@ -13,7 +13,7 @@
 %>
 <item>
   <title><%= CGI.escapeHTML(item.title) %></title>
-  <guid><%= CGI.escapeHTML(item.guid) %></guid>
+  <guid><%= item.url %></guid>
   <link><%= CGI.escapeHTML(item.url) %></link>
   <description><% if item.content %>
     <%= CGI.escapeHTML(item.content) %>
