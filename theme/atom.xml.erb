@@ -5,7 +5,7 @@
   <link rel="self" href="<%= site.url %>"/>
   <link href="<%= site.url %>"/>
   <id></id>
-  <updated><%= site.fetched.to_datetime.rfc3339 if site.fetched %></updated>
+  <updated><%= site.updated.to_datetime.rfc3339 if site.updated %></updated>
   <generator uri="http://feedreader.github.io/"><%= Pluto.generator %></generator>
 
 <%
