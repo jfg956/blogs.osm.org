@@ -4,7 +4,7 @@
   <title><%= site.title %></title>
   <link rel="self" href="<%= site.url %>atom.xml"/>
   <link href="<%= site.url %>"/>
-  <id></id>
+  <id><%= site.url %></id>
   <updated><%= site.updated.to_datetime.rfc3339 if site.updated %></updated>
   <generator uri="http://feedreader.github.io/"><%= Pluto.generator %></generator>
 
