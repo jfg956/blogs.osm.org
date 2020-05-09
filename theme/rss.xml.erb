@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
 
 <channel>
   <title><%= site.title %></title>
@@ -21,7 +21,7 @@
     <%= CGI.escapeHTML(item.summary) %>
   <% end %></description>
   <pubDate><%= item.published.rfc822 %></pubDate>
-  <author><%= CGI.escapeHTML(item.feed.title) %></author>
+  <dc:creator><%= CGI.escapeHTML(item.feed.title) %></dc:creator>
 </item>
 <% end %>
 </channel>
