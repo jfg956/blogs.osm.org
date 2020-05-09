@@ -20,7 +20,7 @@
   <% elsif item.summary %>
     <%= CGI.escapeHTML(item.summary) %>
   <% end %></description>
-  <pubDate><%= item.published %></pubDate>
+  <pubDate><%= item.published.rfc822 %></pubDate>
   <author><%= CGI.escapeHTML(item.feed.title) %></author>
 </item>
 <% end %>
